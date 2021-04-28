@@ -1,0 +1,19 @@
+@import url('../../node_modules/bootstrap/dist/css/bootstrap.min.css');
+h2 {
+    color : green;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+footer {
+    color: #888;
+    border-top: 1px solid #ccc;
+    margin-top: 16px;
+    padding: 16px 0;
+}
+.main-container {
+    flex-grow: 1;
+}
