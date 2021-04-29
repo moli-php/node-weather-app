@@ -15,10 +15,18 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
     if (input.value) {
         const query = encodeURIComponent(input.value)
-        fetch('http://localhost:4000/weather?address=' + query).then(res => {
+        // fetch(`http://localhost:4000/weather?address=` + query).then(res => {
+        fetch('/weather?address=' + query).then(res => {
             res.json().then(data => {
                 console.log(data)
+                // if (data?.request) {
+                    
+                // } else {
+
+                // }
                 content.innerHTML = '<pre>' + JSON.stringify(data) + '</pre>';
+
+               
                 
             })
         }) 
