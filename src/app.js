@@ -3,7 +3,7 @@ const dotenv = require('dotenv')
 const hbs = require('hbs')
 const express = require('express')
 dotenv.config()
-const geoWeather = require('../../weather-app/lib/geo-weather');
+const geoWeather = require('../lib/geo-weather');
 
 
 const publicPath = path.join(__dirname, '../public')
