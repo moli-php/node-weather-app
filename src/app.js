@@ -18,6 +18,7 @@ const partialsPath = path.join(__dirname, '../views/partials')
 // console.log(partialsPath)
 hbs.registerPartials(partialsPath);
 
+
 // setup static
 app.use(express.static(publicPath))
 
